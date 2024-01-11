@@ -1,118 +1,43 @@
 # Lab Report
 
 ## `cd`
+![image](https://github.com/AskewParity/cse15l-lab-reports/assets/87111319/4749c700-8eae-4447-b71e-f28c686904d1)
 
-```
-~/Desktop/School 2023-2024/CSE 12/week1Discussion] cd
+The command `cd` with no further commands changes the working directory to the home directory `~]`. This is not an error.
 
-~/]
-```
+![image](https://github.com/AskewParity/cse15l-lab-reports/assets/87111319/b55e5033-6209-4907-a8b9-e4f9be09e532)
 
-The working directory was `/Users/chris/Desktop/School 2023-2024/CSE 12/week1Discussion`
+The command `cd` with another folder as an argument changes the working directory to that folder (i.e. `[WORKING_DIRECTORY]/folder/`. This is not an error.
 
-The command changes the current working directory to the home directory. This was not an error.
+![image](https://github.com/AskewParity/cse15l-lab-reports/assets/87111319/51d82f47-23ac-4182-a59d-2e486903d3ed)
 
-```
-~/Desktop/School 2023-2024/CSE 12/week1Discussion] cd lib
-
-~/Desktop/School 2023-2024/CSE 12/week1Discussion/lib]
-```
-
-The working directory was `/Users/chris/Desktop/School 2023-2024/CSE 12/week1Discussion`
-
-The command changes the current working directory to the
-folder prompted (must be adjacent to the current working directory).
-This was not an error.
-
-```
-~/Desktop/School 2023-2024/CSE 12/week1Discussion] cd Course.class
-
-cd: not a directory: Course.class
-
-~/Desktop/School 2023-2024/CSE 12/week1Discussion]
-```
-
-The working directory was `/Users/chris/Desktop/School 2023-2024/CSE 12/week1Discussion`
-
-It did not change the working directory. This was an error, as `Course.class` is not a directory, therefore the terminal can not enter it.
+The command `cd` with a file as an argument doesn't change the working directory. This is also an error, as `cd` can not enter the file as a new working directory.
 
 ## `ls`
 
-```
-~/Desktop/School 2023-2024/CSE 12/week1Discussion] ls
+![image](https://github.com/AskewParity/cse15l-lab-reports/assets/87111319/dff3a56e-af4a-4445-b3a4-b604ccc61262)
 
-Course.class              DemoArray.java            DemoArrayImpl.java        DemoArrayImplTester.java  lib
-DemoArray.class           DemoArrayImpl.class       DemoArrayImplTester.class README.md                 libs
+The command `ls` with no arguents prints out all the folders and files in (direct children) the current working directory. It does not change the working directory. This is not an error.
 
-~/Desktop/School 2023-2024/CSE 12/week1Discussion]
-```
+![image](https://github.com/AskewParity/cse15l-lab-reports/assets/87111319/9a189de1-99b1-4d7d-a62c-bfbf6656b669)
 
-The working directory was `/Users/chris/Desktop/School 2023-2024/CSE 12/week1Discussion`
+The command `ls` with a folder/directory as an argument prints out all the folders and files in (direct children) of that directory. This is not an error
 
-It outputs all of the folders and files that are in (direct children) of the current working directory [in alphabetical order]. This is not an error.
+![image](https://github.com/AskewParity/cse15l-lab-reports/assets/87111319/0fb57c69-a041-4f5b-b2aa-ec644cd27b7b)
 
-```
-~/Desktop/School 2023-2024/CSE 12/week1Discussion] ls lib
-
-hamcrest-core-1.3.jar junit-4.13.2.jar
-
-~/Desktop/School 2023-2024/CSE 12/week1Discussion]
-```
-
-The working directory was `/Users/chris/Desktop/School 2023-2024/CSE 12/week1Discussion`
-
-It outputs all the folders and files that are in (direct children) in the folder specified. This is not an error.
-
-```
-~/Desktop/School 2023-2024/CSE 12/week1Discussion] ls Course.class
-
-Course.class
-
-~/Desktop/School 2023-2024/CSE 12/week1Discussion]
-```
-
-The working directory was `/Users/chris/Desktop/School 2023-2024/CSE 12/week1Discussion`
-
-It just repeats the name of the class. This is not an error.
+The command `ls` with a file as an argument just prints out the name of that file. This is not an error. 
 
 ## `cat`
 
-```
-~/Desktop/School 2023-2024/CSE 12/week1Discussion] cd Course.class
+![image](https://github.com/AskewParity/cse15l-lab-reports/assets/87111319/052c75fb-5453-468d-bdc9-82c8ddfdd5b5)
 
-```
+The command `cat` with no arguments keeps a running process open, but otherwise doesn't do anything. When text is types, it repeats the test back to you. This is not an error (it is just reading from standard input).
 
+![image](https://github.com/AskewParity/cse15l-lab-reports/assets/87111319/b7f9c915-c535-4efd-aeb6-1a4a942c5b3a)
 
-The working directory was `/Users/chris/Desktop/School 2023-2024/CSE 12/week1Discussion`
+The command `cat` with a folder/directory as an argument fails. This is an error, and the program can not print out the contents of a directory.
 
-```
-~/Desktop/School 2023-2024/CSE 12/week1Discussion] cat lib
+![image](https://github.com/AskewParity/cse15l-lab-reports/assets/87111319/e906508f-048f-4b25-b3c6-17e905ecefbc)
 
-cat: lib: Is a directory
+The command `cat` with a file as an argument prints out the content to the console. This is not an error.
 
-~/Desktop/School 2023-2024/CSE 12/week1Discussion]
-```
-
-The working directory was `/Users/chris/Desktop/School 2023-2024/CSE 12/week1Discussion`
-
-This is an error, it can not print out the contents of the directory itself.
-
-```
-~/Desktop/School 2023-2024/CSE 12/week1Discussion] cd DemoArray.java
-
-public interface DemoArray<E extends Comparable<E>>{
-    
-    /* Get the smallest element in the array*/
-    public E min();
-  
-    /* Get the ith element in the array*/
-    public E get(int i);
-
-}%     
-
-~/Desktop/School 2023-2024/CSE 12/week1Discussion]
-```
-
-The working directory was `/Users/chris/Desktop/School 2023-2024/CSE 12/week1Discussion`
-
-It prints out the text (or content) in the file onto the console. This is not an error
