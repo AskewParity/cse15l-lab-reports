@@ -33,4 +33,4 @@ Here, I log into an `ieng6` without needed to provide a password (because my pub
 
 ***
 
-I didn't know how to copy files between two machines. Now, I can interface between my machines, and not just work in sandboxes (the machines themselves). 
+I didn't know how to copy files between two machines. Now, using the `scp` command, I can interface between my machines, and not just work in sandboxes (the machines themselves). This enables me to work in one environment when its convinient to, and then switch to the other if I need something (or space) that doesn't exist on the original machine. 
