@@ -84,10 +84,13 @@ The methods run are `handleRequest()` and `printLog()`. The relevant argumetns p
 
 ![image](https://github.com/AskewParity/cse15l-lab-reports/assets/147351354/57421f01-b1bd-4b8c-843b-1a983dcade49)
 
-The private key is `id_rsa` whereas the public key is `id_rsa.pub` (denoted by the pub). 
+![image](https://github.com/AskewParity/cse15l-lab-reports/assets/147351354/a5648017-ae43-4baa-984e-b53e3e4b566f)
+
+
+The private key is `id_rsa` whereas the public key on the server `ieng6` is `authorized_keys` 
 
 - Absolute path of private key: `/Users/chris/.ssh/id_rsa`
-- Absolute path of publid key: `/Users/chris/.ssh/id_rsa.pub`
+- Absolute path of publid key: `/home/linux/ieng6/oce/69/chl225/.ssh/authorized_keys`
 
 
 ![image](https://github.com/AskewParity/cse15l-lab-reports/assets/147351354/87cafb48-f575-436a-b3ad-2b244dc3ee7d)
