@@ -72,11 +72,17 @@ class ChatServer {
 
 ![image](https://github.com/AskewParity/cse15l-lab-reports/assets/147351354/80f8110a-7880-4c47-b18f-1a59a756cbe3)
 
-The methods run are `handleRequest()` and `printLog()`. The relevant argumetns passeed in were `s=Hello` and `user=jpolitz` where `s` refered to the message and `user` refered to the user. The List `chatlog` is changed as a string documenting this message is put into the List.
+The methods run are `handleRequest()` and `printLog()`. 
+
+There was a `URI` or a universal resource identifier passed into `handleRequest()`, the `URI` is a string that has predefined methods to get specific parts that are relevant to the actions for reading and manipulating the `URI`.
+
+Within the `URI`, the relevant components were `s=Hello` and `user=jpolitz` where `s` refered to the message and `user` refered to the user. The List `chatlog` was empty before the screenshot, but now has a new string element at index 0, composed of "user: s" or "jpolitz: Hello" in this case. The result of this change is displayed in the text printed (each line cooresonds to the nth elmenet in `chatLog`).
 
 ![image](https://github.com/AskewParity/cse15l-lab-reports/assets/147351354/91df55b3-e861-43be-93df-2e5b447a6bff)
 
-The methods run are `handleRequest()` and `printLog()`. The relevant argumetns passeed in were `s=How are you` and `user=yash` where `s` refered to the message and `user` refered to the user. The List `chatlog` is changed as a string documenting this message is put into the List; specifically, there is already an existing elmeent, and this is added strictly added after the previous messages.
+There was a `URI` or a universal resource identifier passed into `handleRequest()`, the `URI` is a string that has predefined methods to get specific parts that are relevant to the actions for reading and manipulating the `URI`.
+
+The methods run are `handleRequest()` and `printLog()`. The relevant argumetns passeed in were `s=How are you` and `user=yash` where `s` refered to the message and `user` refered to the user. The List `chatlog` is changed as a string documenting this message is put into the List; specifically, there is already an existing elmeent, and this is added strictly added after the previous message at index 1, composed of "user: s" or "yash: How are you" in this case. The result of this change is displayed in the text printed (each line cooresonds to the nth elmenet in `chatLog`).
 
 ## Part 2
 
@@ -87,7 +93,7 @@ The methods run are `handleRequest()` and `printLog()`. The relevant argumetns p
 ![image](https://github.com/AskewParity/cse15l-lab-reports/assets/147351354/a5648017-ae43-4baa-984e-b53e3e4b566f)
 
 
-The private key is `id_rsa` whereas the public key on the server `ieng6` is `authorized_keys` 
+The private key is `id_rsa` on my local machine whereas the public key on the server `ieng6` is `authorized_keys` 
 
 - Absolute path of private key: `/Users/chris/.ssh/id_rsa`
 - Absolute path of publid key: `/home/linux/ieng6/oce/69/chl225/.ssh/authorized_keys`
