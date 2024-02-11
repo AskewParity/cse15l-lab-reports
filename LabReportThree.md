@@ -54,3 +54,24 @@ These are solved by
 
 
 ## Part 2 - Researching Commands
+
+All of the following were found using the `man grep` command
+### `-C`
+
+```bash
+$ grep -r "microscopically distinct" -C 1
+
+./technical/biomed/1471-2121-2-10.txt-          24, 27, 28], often without a clear definition of these
+./technical/biomed/1471-2121-2-10.txt:          terms. Microvilli are light microscopically distinct from
+./technical/biomed/1471-2121-2-10.txt-          filopodia and retraction fibers [ 29]. Filopodia or
+```
+
+recursively searches for "microscopically distinct" and then gives 1 line of "context" (i.e. 1 line before and after the line with a match).
+
+### `--exclude`
+
+```bash
+$ grep -r "microchip" --exclude="*/plos/*" 
+./technical/biomed/1471-2164-3-7.txt:        microchips [ 17 ] , and massive parallel signature
+```
+recursively searches the directory for "microchip", but exlcudes everything from the `plos` directory (it turns out the majority of results are from `plos`)
