@@ -151,3 +151,22 @@ $ grep -rn "why is"
 ```
 
 It recursively searches for the pattern "why is", and in the print out, the flag `-n` displays the line number in the file it is at. This could pinpoint where the given pattern is at in a multi-thousand line file, giving the ability to travel to the file and inspect that specific section (maybe for debugging, or for context).
+
+### `-c`
+
+```bash
+$ grep "microscopically distinct" ./technical/biomed/1471-2121-2-10.txt -c
+
+1
+```
+
+The command recursively searches for hte pattern "microscopically distainct", but instead of printing out the text, it only counts the number of ocurrances in the file, which in this case is 1.
+
+```bash
+$ grep "The" ./technical/biomed/1471-2121-2-10.txt -c                     
+
+51
+```
+
+The command recursively searches for hte pattern "The", but instead of printing out the text, it only counts the number of ocurrances in the file, which in this case is 51 times in the file.
+
